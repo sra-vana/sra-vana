@@ -1,4 +1,3 @@
-import sys
 
 
 class admin:
@@ -21,7 +20,7 @@ class admin:
         elif m=="4":
             self.remove_food_item()
         elif m=="5":
-            sys.exit()
+            exit()
         else:
             print("Please choose correct option")
             self.start()
@@ -135,6 +134,7 @@ class user:
     def create(self):
         self.user_data.append(self.email)
         self.user_data.append(self.password)
+
         self.user_data.append(self.full_name)
         self.user_data.append(self.phone)
         self.user_data.append(self.address)
@@ -151,7 +151,7 @@ class user:
         elif m=="3":
             self.update_profile()
         elif m=="4":
-            sys.exit()
+            exit()
         else:
             print("Please choose correct option")
             self.application()
@@ -270,7 +270,7 @@ def take_input(food_data,prev_orders):
             create_user=user(email,password,full_name,phone,address,food_data,prev_orders)
             create_user.create()
         elif user_input=="3":
-            sys.exit()
+            exit()
 
         else:
             print("Please choose correct option")
