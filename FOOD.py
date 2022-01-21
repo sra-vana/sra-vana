@@ -3,7 +3,7 @@ import sys
 
 class admin:
     # name quantity price discount stock 
-    def _init_(self,email,password,food_data):
+    def __init__(self,email,password,food_data):
         self.ad_email=email
         self.ad_pass=password
         self.food_data=food_data
@@ -122,7 +122,7 @@ class admin:
 
 class user:
     
-    def _init_(self,email,password,full_name,phone,address,food_data,prev_orders):
+    def __init__(self,email,password,full_name,phone,address,food_data,prev_orders):
         self.email = email
         self.password = password
         self.full_name = full_name
